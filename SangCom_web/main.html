@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SangCom</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/ic_sangcom-playstore.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!--icon git repo-->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body style="min-height:1500px !important;">
+
+
+        <nav class="navbar navbar-expand-lg    navbar-blue bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="main.html" >SangCom</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">로그아웃</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">내 정보</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="py-6 text-center" style="padding-top: 3.6rem !important; padding-bottom:0 !important;">
+           <p id="Date" style="margin:0;"></p>
+        </header>
+
+<header class="py-2" style="padding-top:0px !important;">
+
+
+
+            <section class="content py-6" style="padding-top:0px !important;">
+
+              <nav id="navbar">
+                <div class="nav_first">
+                  <ion-icon name="grid-outline" class="nav_toggle" id="nav_toggle"></ion-icon>
+                  <a href="#" calss="nav_logo">Home</a>
+                </div>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id="nav_toggle"></ion-icon>
+                  <a href="#" calss="nav_logo">Home</a>
+                </div>
+              </nav>
+
+            <div class="text-center">
+             <table class="p-4 bg-light rounded-3 text-center schedule_table" id="Study_schedule">
+               <!-- <caption style="text-align:center;color:red;">시간표</caption> -->
+               <tr class="schedule">
+                 <th style="background-color:"></th>
+                 <th>월</th> <th>화</th> <th>수</th><th>목</th><th>금</th>
+               </tr>
+               <tr class="schedule">
+                 <th>1</th>
+                  <th id="1st_mon"></th> <th id="1st_tue"></th> <th id="1st_wed"></th> <th id="1st_thu"></th> <th id="1st_fri"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>2</th>
+                  <th id="2st_mon"></th> <th id="2st_tue"></th> <th id="2st_wed"></th> <th id="2st_thu"></th> <th id="2st_fri"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>3</th>
+                  <th id="3st_mon"></th> <th id="3st_tue"></th> <th id="3st_wed"></th> <th id="3st_thu"></th> <th id="3st_fri"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>4</th>
+                  <th id="4st_mon" contenteditable="true"></th> <th id="4st_tue" contenteditable="true"></th> <th id="4st_wed" contenteditable="true"></th> <th id="4st_thu" contenteditable="true"></th> <th id="4st_fri" contenteditable="true"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>5</th>
+                 <th id="5st_mon"></th> <th id="5st_tue"></th> <th id="5st_wed"></th> <th id="5st_thu"></th> <th id="5st_fri"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>6</th>
+                  <th id="6st_mon"></th> <th id="6st_tue"></th> <th id="6st_wed"></th> <th id="6st_thu"></th> <th id="6st_fri"></th>
+               </tr>
+               <tr class="schedule">
+                 <th>7</th>
+                  <th id="7st_mon"></th> <th id="7st_tue"></th> <th id="7st_wed"></th> <th id="7st_thu"></th> <th id="7st_fri"></th>
+               </tr>
+             </table>
+             <!-- <a href="#" target="_blank"> -->
+             <input class="material-icons btn btnmid" type="button" onclick="newWindow()" name="mod" value="mode 추가(수정)하기">
+             <!-- </a> -->
+           </div>
+
+            <div class="lunch">
+
+              <div class="container">
+                  <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <h1 style="font-size:20px;">급식표</h1>    <p id="Date2"></p> <br>
+                     <div class="bg-white" style="">
+                        <h5 id="M_D"></h5>
+                        <br>현미밥
+                        <br>소고기떡국
+                        <br>에그타르트
+                        <br>닭갈비
+                     </div>
+                     <div class="bg-white" style="">
+                        <h5 id="M_D"></h5>
+                        <br>현미밥
+                        <br>소고기떡국
+                        <br>에그타르트
+                        <br>닭갈비
+                     </div>
+
+
+
+                  </div>
+              </div>
+            </div>
+
+
+
+             </section>
+
+
+
+</header>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/lunch.js"></script>
+
+        <!-- <script>
+          let today = new Date();
+          let Week = ["일","월","화","수","목","금","토"];
+
+          document.getElementById('Date').innerHTML=today.getFullYear()+"년 "
+          +(today.getMonth()+1)+"월 "+(today.getDate())+"일 "+(Week[(today.getDay())])+"요일" ;
+
+          document.getElementById('Date2').innerHTML=today.getFullYear()+"년 "
+          +(today.getMonth()+1)+"월 " ;
+
+        </script> -->
+    </body>
+</html>
