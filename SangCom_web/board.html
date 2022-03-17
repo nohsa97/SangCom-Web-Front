@@ -12,6 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/board.css" rel="stylesheet" />
         <!--icon git repo-->
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
@@ -41,7 +42,6 @@
 
 
             <section class="content py-6" style="padding-top:0px !important;">
-
               <nav id="navbar">
                 <div class="nav_first">
                   <ion-icon name="grid-outline" class="nav_toggle" id="nav_toggle"></ion-icon>
@@ -53,27 +53,44 @@
                 </div>
               </nav>
 
-              <div class="borad_list_wrap">
-                <table class="board_list table-borderless">
-                  <caption>자유 게시판</caption>
-                  <thead>
-                    <tr>
-                      <th>번호</th>
-                      <th>제목</th>
-                      <th>글쓴이</th>
-                      <th>작성일</th>
-                      <th>조회</th>
-                    </tr>
-                  </thead>
-
-                </table>
-
-              </div>
-
-
-
-
+            <div class="board_list">
+              <h1>자유게시판</h1>
+              <article>
+                <article class="post">
+                  <h5 class="post_name">2월25일 개학</h5>
+                  <p class="post_content">말이됨</p>
+                  <span class="material-icons bottom">
+                    mode_comment
+                    </span>
+                    <span class="material-icons bottom">
+                      favorite
+                      </span>
+                      <span class="material-icons bottom">
+                        bookmark
+                        </span>
+                </article>
+                <article class="post">
+                  <h5 class="post_name">익인 한분과 상콤</h5>
+                  <p class="post_content">제법 재밌어요</p>
+                  <span class="material-icons bottom">
+                    mode_comment
+                    </span>
+                    <span class="material-icons bottom">
+                      favorite
+                      </span>
+                      <span class="material-icons bottom">
+                        bookmark
+                        </span>
+                </article>
+                
+              </article>
+            </div>
              </section>
+
+
+            <footer class="modal-footer">
+              nobody
+            </footer>
 
 
 

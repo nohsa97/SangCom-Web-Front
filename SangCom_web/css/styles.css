@@ -152,6 +152,7 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  font-weight: bolder;
 }
 
 h6, .h6 {
@@ -5637,7 +5638,7 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   flex-shrink: 0;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0.75rem;
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
@@ -12255,8 +12256,8 @@ textarea.form-control-lg {
 
  .content nav {
    flex-basis: 150px;
-   border: 1px solid black;
-   height: 1300px;
+   border-right: 1px solid black;
+   
    z-index: 1;
    left:0px;
    flex-shrink: 0;
@@ -12264,7 +12265,7 @@ textarea.form-control-lg {
 
 
 
-}
+
 
 .container .aside{
   position:relative;
@@ -12310,10 +12311,6 @@ input:focus{
 
 
 
-div talbe:not(.board_list) {
-  border: none;
-}
-
 
 
 
@@ -12338,3 +12335,53 @@ div talbe:not(.board_list) {
 
   }
 }
+
+.board_list{
+  border-left:1px solid black;
+  padding-left:100px;
+  margin-left: -1px !important;
+}
+
+
+
+
+/* 구글 아이콘 사용 */
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 { font-size: 18px; }

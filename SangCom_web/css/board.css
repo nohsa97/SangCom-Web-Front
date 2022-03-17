@@ -1,0 +1,19 @@
+ .board_list {
+     min-width: 500px;
+     margin-left: 100px;
+     margin-top: 20px;
+ }
+ 
+ .post{
+     padding: 10px;
+     margin: 5px;
+     border: 1px solid gray;
+     min-width: 550px;
+     min-height: 100px;
+ }
+
+ .post .bottom {
+     position:  relative;
+     
+     left:450px;
+ }
