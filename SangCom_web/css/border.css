@@ -1,0 +1,64 @@
+ .border_list {
+    border-left:1px solid black;
+    padding-left:100px;
+    margin-left: -1px !important;
+     min-width: 500px;
+     margin-left: 100px;
+     margin-top: 20px;
+     
+ }
+
+  .border_content {
+    padding: 50px;
+    padding-bottom: 10px;
+    border-left:1px solid black;
+    margin-left: -1px !important;
+    min-width: 500px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-left: 100px;
+ }
+ 
+ .comment_input {
+    min-width : 480px;
+    margin-left: 20px !important;
+    margin-bottom: 10px;
+ }
+
+.comment_list{
+   padding-left: 20px !important;
+}
+
+ 
+ .post{
+     padding: 10px;
+     margin: 5px;
+     border: 1px solid gray;
+     min-width: 550px;
+     min-height: 100px;
+ }
+
+ .post .bottom {
+     position:  relative;
+     
+     left:450px;
+ }
+
+ @media (min-width:1200px) {
+    .content nav {
+      width : 100%;
+    }
+
+    .border_content {
+        padding: 10px;
+        padding-left: 150px;
+        border-left:1px solid black;
+        margin-left: -1px !important;
+        min-width: 800px;
+        margin-left: 100px;
+        margin-top: 20px;
+        
+        margin-left: 100px;
+        
+     }
+  }
