@@ -44,6 +44,12 @@
      left:450px;
  }
 
+ .comment_btn{
+    border: none;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    
+ }
+
  @media (min-width:1200px) {
     .content nav {
       width : 100%;

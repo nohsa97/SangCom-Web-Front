@@ -45,11 +45,11 @@
               <nav id="navbar">
                 <div class="nav_first">
                   <ion-icon name="grid-outline" class="nav_toggle" id="nav_toggle"></ion-icon>
-                  <a href="#" calss="nav_logo">Home</a>
+                  <a href="border.html" calss="nav_logo">자유게시판</a>
                 </div>
                 <div class="nav_list">
                   <ion-icon name="grid-outline" class="nav_toggle" id="nav_toggle"></ion-icon>
-                  <a href="#" calss="nav_logo">Home</a>
+                  <a href="#" calss="nav_logo">학생회게시판</a>
                 </div>
               </nav>
 
@@ -72,20 +72,35 @@
                         <span class="material-icons bottom">
                           bookmark
                           </span>
+
+                          <div class="border_comment bg-light" style="padding: 20px;">
+                            
+                            <input type="text" placeholder="댓글을 입력해주세요." class="comment_input btn_basic">
+                            <input type="submit" class="btnsmall_blue btn_basic" value="입력">
+                            <br>
+                            
+                            <div id="comment">
+                              <p class="comment_list">  <span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
+                                간장마카롱 님뿐임
+                              </p>
+
+                                <div id="comment_btn" class="justify-content-end d-flex">
+                                  <input type="button" id="comment_add"  class="material-icons comment_btn" value="mode_comment">
+                                  <input type="button" id="comment_favorite"  class="material-icons comment_btn" value="favorite">
+                                  <span id="comment_favorite_value">1</span>
+                                </div>
+                              
+                            </div>
+                            <p class="comment_list"><span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
+                              
+                              포스트아포칼립스</p>
+                            
+                          </div>
                     
                   </div>
 
 
-                  <div class="border_comment bg-light">
-                    <input type="text" placeholder="댓글을 입력해주세요." class="comment_input"><br>
-                    
-                    <p class="comment_list"><span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
-                      간장마카롱 님뿐임</p>
-                    <p class="comment_list"><span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
-                      
-                      포스트아포칼립스</p>
-                    
-                  </div>
+                  
               </article>
             </section>
 
@@ -106,17 +121,7 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/lunch.js"></script>
-
-        <!-- <script>
-          let today = new Date();
-          let Week = ["일","월","화","수","목","금","토"];
-
-          document.getElementById('Date').innerHTML=today.getFullYear()+"년 "
-          +(today.getMonth()+1)+"월 "+(today.getDate())+"일 "+(Week[(today.getDay())])+"요일" ;
-
-          document.getElementById('Date2').innerHTML=today.getFullYear()+"년 "
-          +(today.getMonth()+1)+"월 " ;
-
-        </script> -->
+        <script src="js/board.js"></script>
+        
     </body>
 </html>

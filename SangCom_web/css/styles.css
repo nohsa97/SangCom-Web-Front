@@ -159,10 +159,7 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
+
 
 abbr[title],
 abbr[data-bs-original-title] {
@@ -361,10 +358,11 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
 
-    border-radius: 5px;
-    border: 2px solid #2E9AFE;
-
+.btn_basic{
+  border-radius: 5px;
+  border: 2px solid #2E9AFE;
 }
 
 button,
@@ -3040,6 +3038,12 @@ textarea.form-control-lg {
 .btnsmall {
   width : 150px;
   font-size: 1rem !important;
+}
+
+.btnsmall_blue {
+  width:80px;
+  background-color: rgb(165, 240, 250);
+
 }
 
 .btnmid {
@@ -12284,6 +12288,7 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   font-size: 14px;
+  
 }
 
 .schedule_table th {
@@ -12380,3 +12385,8 @@ input:focus{
 }
 
 .material-icons.md-18 { font-size: 18px; }
+
+
+#Date {
+  background-color: powderblue;
+}
