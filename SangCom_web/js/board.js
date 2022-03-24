@@ -21,6 +21,8 @@ comment_add_Data[0].onclick = function(){
   if(vr==='2')
   {
     comment.innerHTML='no';
+
+    
   }
   vr = '2';
 }

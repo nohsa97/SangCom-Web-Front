@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-
-  </head>
-  <body>
-    <table border="1">
-      <tr id="border_name">
-        <th colspan="2" class="text-center">자유게시판</th>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <a href="border_content.html">
-            <article class="post">
-              <h5 class="post_name">2월25일 개학</h5>
-              <p class="post_content">말이됨</p>
-            </article>
-          </a>
-        </td>
-      </tr>
-      <tr>
-        
-        <td> <a href="#">이전</a></td>
-        <td><a href="#">다음</a></td>
-      </tr>
-    </table>
- 
-  </body>
+<html>
+<body id="start">
+<ul>
+    <li><a href="./532">html</a></li> 
+    <li><a href="./533">css</a></li>
+    <li><a href="./534">JavaScript</a>
+        <ul>
+            <li><a href="./535">JavaScript Core</a></li>
+            <li><a href="./536">DOM</a></li>
+            <li><a href="./537">BOM</a></li>
+        </ul>
+    </li>
+</ul>
+<script>
+function traverse(target, callback){
+    if(target.nodeType === 1){
+        //if(target.nodeName === 'A')
+        callback(target);
+        var c = target.childNodes;
+        for(var i=0; i<c.length; i++){
+            traverse(c[i], callback);       
+        }   
+    }
+}
+traverse(document.getElementById('start'), function(elem){
+    elem.style.color='red';
+    console.log(elem);
+});
+</script>
+</body>
 </html>
