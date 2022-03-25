@@ -10,7 +10,7 @@
     <title>시간표 추가하기(수정)</title>
 
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/ic_sangcom-playstore.png" />
+    <link rel="icon" type="image/x-icon" href="image/ic_sangcom-playstore.png" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -56,13 +56,14 @@
               <label for="Study_teacher">선생님</label>
                 <input type="text" name = "Study_teacher" id ="Study_teacher" placeholder="성함" >
 
-           <input class="material-icons btn btnmid" type="button" onclick="addClass()"
+           <input class="material-icons btn btnmid" type="button" onclick="getClass()"
            name="mod" value="mode 추가(수정)하기" style="margin:10px;">
 
     </div>
 
 
-      <script src="js/lunch.js"></script>
+    
+      <script src="js/schedule.js"></script>
     <!-- <script>
     function addClass() {
       let Study_name = document.getElementById('Study_name').value;

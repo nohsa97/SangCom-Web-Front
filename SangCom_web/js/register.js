@@ -1,11 +1,8 @@
 let final_check = document.getElementById('reg_checkbox');
 var pattern_num = /[0-9]/;	// 숫자
-
-    var pattern_eng = /[a-zA-Z]/;	// 문자
-
-    var pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/;
-
-    var pattern_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+var pattern_eng = /[a-zA-Z]/;	// 문자
+var pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/;
+var pattern_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
 
 
 
