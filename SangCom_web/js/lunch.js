@@ -29,3 +29,4 @@
      document.getElementById(str).innerHTML=Study_name;
 
     }
+ 
