@@ -113,14 +113,14 @@
                           </div> -->
 
                           <div class="bg-light" id="post_comment">
-                              <ul style="list-style:none;">
+                              <ul id="commentList" style="list-style:none;">
                                     <div id="comment">
                                         <li>
-                                            <input type="text" placeholder="댓글을 입력해주세요." class="comment_input btn_basic">
-                                            <input type="submit" class="btnsmall_blue btn_basic" value="입력">
+                                            <input type="text" placeholder="댓글을 입력해주세요." id="comment_text" class="comment_input btn_basic">
+                                            <input type="submit" id="comment_add" class="btnsmall_blue btn_basic" value="입력" onclick="addChild()" onkeyup="addChild()">
                                         </li>
                                         <li>
-                                                <p class="comment_list">  <span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
+                                                <!-- <p class="comment_list">  <span class="material-icons">cloud</span><b>익명/2022-${month}-27</b> <br>
                                                 간장마카롱 님뿐임
                                                 </p>
             
@@ -128,7 +128,7 @@
                                                     <input type="button" class="material-icons comment_btn comment_add" value="mode_comment">
                                                     <input type="button" class="material-icons comment_btn comment_favorite " value="favorite">
                                                     <span id="comment_favorite_value">1</span>
-                                                </div>
+                                                </div> -->
                                         </li>
                                         <!-- <li>
                                             <p class="comment_list">  <span class="material-icons">cloud</span><b>익명/2022-01-27</b> <br>
@@ -170,6 +170,11 @@
         <script src="js/scripts.js"></script>
         <script src="js/lunch.js"></script>
         <script src="js/board.js"></script>
+        <script>
+          let time = new Date();
+let month = time.getMonth()+1;
+let day = time.getDate();
+        </script>
         
     </body>
 </html>
