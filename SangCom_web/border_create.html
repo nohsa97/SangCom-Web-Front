@@ -37,9 +37,7 @@
            <p id="Date" style="margin:0;"></p>
         </header>
 
-<header class="py-2" style="padding-top:0px !important;">
-
-
+          <header class="py-2" style="padding-top:0px !important;">
 
             <section class="content" style="padding-top:0px !important;">
               <nav id="navbar">
@@ -70,67 +68,24 @@
 
               </nav>
 
+              <article>
+                <div class="border_list border_content">
+                    <h2 style="border-bottom: 1px solid black;">글쓰기</h2>
+                      <input type="text" class="border_create">
 
-
-            <table class="border_list" style="border-left: 1px solid black; margin-left: -1px;">
-                <tr>
-                  <th>전교생 자유게시판 <b style=""></b> <span style=""><a href="border_create.html"><input type="button" value="글쓰기"></a></span></th> 
+                    
+                </div>
+              </article>
                   
-                </tr>
+            </section>
+
             
-
-                <tr>
-                    <td>
-                        <a href="border_content.html">
-                            <article class="post">
-                              <h5 class="post_name">2월25일 개학</h5>
-                              <p class="post_content">말이됨</p>
-                              <span class="material-icons bottom">
-                                mode_comment
-                                </span>
-                                <span class="material-icons bottom">
-                                  favorite
-                                  </span>
-                                  <span class="material-icons bottom">
-                                    bookmark
-                                    </span>
-                            </article>
-                          </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <article class="post">
-                            <h5 class="post_name">익인 한분과 상콤</h5>
-                            <p class="post_content">제법 재밌어요</p>
-                            <span class="material-icons bottom">
-                              mode_comment
-                              </span>
-                              <span class="material-icons bottom">
-                                favorite
-                                </span>
-                                <span class="material-icons bottom">
-                                  bookmark
-                                  </span>
-                          </article>
-                    </td>
-                </tr>
-
-                <tr>
-                  <!-- <td class="">
-                    <input type="text" placeholder="검색어를 입력해주세요." class="btn_basic" size="20">
-                    <input type="submit" class="btnsmall_blue btn_basic" value="입력">
-                  </td> -->
-                </tr>
-            </table>
-
-
-             </section>
 
 
             <footer class="modal-footer">
+              
               <a href="https://sangmyung-agh.sen.hs.kr/" target="_blank"><img src="icon/상명여고.png" alt="X"></a>
+              
             </footer>
 
 
@@ -141,7 +96,12 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/lunch.js"></script>
-
-       
+        <script src="js/board.js"></script>
+        <script>
+          let time = new Date();
+let month = time.getMonth()+1;
+let day = time.getDate();
+        </script>
+        
     </body>
 </html>

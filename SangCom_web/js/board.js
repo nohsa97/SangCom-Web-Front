@@ -45,9 +45,33 @@ function addChild() {
   var target = document.getElementById('commentList');
   var text = document.getElementById('comment_text').value;
   var input_comment = makecomment(text);
+
+  if(text=='') {
+    alert('댓글을 입력하세요.');
+  }
+  else {
   document.getElementById('comment_text').value='';
   target.insertAdjacentHTML('beforeend',input_comment);
+  }
 }
+
+function enter() {
+    if (window.event.keyCode == 13) {
+      var target = document.getElementById('commentList');
+      var text = document.getElementById('comment_text').value;
+      var input_comment = makecomment(text);
+
+      if(text=='') {
+        alert('댓글을 입력하세요.');
+      }
+      else {
+      document.getElementById('comment_text').value='';
+      target.insertAdjacentHTML('beforeend',input_comment);
+      }
+      }
+}
+
+
 
 
 
