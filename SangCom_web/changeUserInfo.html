@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=yes"/>
+    <meta name="author" content="KKE">
+
+  	<title>내 정보 수정 - 상콤</title>
+    <link rel="icon" type="image/x-icon" href="image/ic_sangcom-playstore.png" />
+  	<link href="css/styles.css" rel="stylesheet">
+    <link href="css/myPage.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg    navbar-blue bg-white">
+  		<div class="container">
+  		<a class="navbar-brand" href="main.html" >SangCom</a>
+  		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+  			<li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">로그아웃</a></li>
+  			<li class="nav-item"><a class="nav-link" href="#!">내 정보</a></li>
+  			</ul>
+  		</div>
+  		</div>
+  	</nav>
+
+    <section style="border:1px solid gray; max-width: 800px; padding-top: 60px;">
+
+      <div>ID<br></div>
+      <div>SangComtest<br></div>
+      <div>이름<br></div>
+      <div>test<br></div>
+
+
+      <div>전화번호<br></div>
+      <input type="text" name = "phonenumber" id ="phone_member" placeholder="010-0000-0000" ><br>
+      <div>생년월일<br></div>
+      <input type="text" name = "birthdata" id ="birth_data" placeholder="2020-11-11" ><br>
+      <div>입학년도<br></div>
+      <input type="text" name = "member_addmission" id ="member_addmission" placeholder="ex)2021" ><br>
+
+      <select class="" name="student_class_grade">
+        <option value="none">학년</option>
+        <option value="1_grade">1</option>
+        <option value="2_grade">2</option>
+        <option value="3_grade">3</option>
+      </select>
+
+      <select class="" name="student_class_class">
+        <option value="none">반</option>
+        <option value="1_class">1</option>
+        <option value="2_class">2</option>
+        <option value="3_class">3</option>
+        <option value="4_class">4</option>
+        <option value="5_class">5</option>
+        <option value="6_class">6</option>
+        <option value="7_class">7</option>
+      </select>
+      번호
+      <input type="text" name = "member_class_number" id ="member_class_number"  placeholder="번호"  style="width:40px"><br>
+
+      <div>이메일<br></div>
+      <input type="text" name = "e-mail" id ="e-mail" placeholder="ex)sangcom.sangmyung.ac.kr" ><br>
+
+      <div style=" text-align: center;">
+         <button style=" display: inline-block;">"/api/user/info 수정 완료" </button>
+      </div>
+
+
+      </section>
+
+    <footer class="modal-footer">
+			<a href="https://sangmyung-agh.sen.hs.kr/" target="_blank"><img src="image/상명여고.png" alt="icon/상명여고.png"></a>
+		</footer>
+
+  </body>
+</html>

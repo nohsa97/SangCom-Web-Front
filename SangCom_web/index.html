@@ -34,38 +34,40 @@
         </nav>
         <!-- 로그인-->
         <header class="py-5">
-          <center>
-            <a href="index.html">
-          <img class="container px-lg-5" src="image/ic_cloudy-playstore.png" style="width : 300px; -align:center" alt="no_image">
-            </a>
-        </center>
+          <div>
+              <a href="index.html">
+            <img class="container px-lg-5" src="image/ic_cloudy-playstore.png" style="width : 300px; -align:center" alt="no_image">
+              </a>
+          </div>
+     
             <div class="container px-lg-5">
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                   <h1>SangCom</h1><br>
                   <!-- 로그인 -->
 
-                  <form action="main.html" method="post">
+                  <form method="post">
                         <label for="member_ID" >ID</label>
                         <input class="loginbord" type="text" name = "ID" id ="member_ID" placeholder="ID입력" value="" required autocomplete="off"><br>
                         <label for="member_password" >PW</label>
                         <input class="loginbord" type="password" name = "PW" id ="member_password" placeholder="PW입력" value="" required autocomplete="off">
-                        <div>
-                          <br>
-                        <input class="material-icons btn" id="login_btn" style="width:300px;" type="submit" name="login" value="login 로그인" onclick="">
-
+                        <div style="margin: 10px;">
+                        
+                        <input class="material-icons btn" id="login_btn" style="width:300px;" type="submit" name="login" value="login 로그인" onclick="loginBtn()">
                       </div>
-                        <br>
+                       
                   </form>
-
                   <!--아래 회원가입 , idpw찾기 버튼.-->
-                  <a href="register.html" target="_blank">
-                  <input class="material-icons btn btnsmall" type="button" name="register" value="how_to_reg 회원가입">
-                  </a>
+                  <div style="margin: 5px;">
+                      <a href="register.html" target="_blank">
+                      <input class="material-icons btn btnsmall" type="button" name="register" value="how_to_reg 회원가입">
+                      </a>
+                      <a href="findPW.html" target="_blank">
+                      <input class="material-icons btn btnsmall list" type="button" name="register" value="policy 비밀번호 찾기">
+                      </a>
+                  </div>
 
 
-        <a href="findPW.html" target="_blank">
-                  <input class="material-icons btn list" type="button" name="register" value="policy 비밀번호 찾기">
-                  </a>
+       
 
                 </div>
             </div>
@@ -76,33 +78,8 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/login.js"></script>
-
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-          <!-- <script>
-
-
-          let id = document.getElementById('member_ID');
-           let pw = document.getElementById('member_password');
-
-
-            document.getElementById('login_btn').onclick = function() {
-            {
-               if(id.value=="")
-               {
-                 alert('아이디를 입력 하십시오');
-               }
-               else if(pw.value=="")
-               {
-                 alert('비밀번호를 입력 하십시오');
-               }
-
-              else {
-                alert("어서오십시오.")
-              }
-            }
-          }
-          </script> -->
 
 
     </body>
