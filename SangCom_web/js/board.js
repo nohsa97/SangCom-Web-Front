@@ -3,9 +3,9 @@ let month = time.getMonth()+1;
 let day = time.getDate();
 
 let comment = document.getElementById('comment');
-let comment_favor = document.getElementById('comment_favorite_value');
-let comment_favor_Data = document.getElementsByClassName("comment_favorite");
-let comment_add_Data = document.getElementsByClassName("comment_add");
+let comment_favor = document.getElementById('commentFavoriteValue');
+let comment_favor_Data = document.getElementsByClassName("commentFavorite");
+let comment_add_Data = document.getElementsByClassName("commentAdd");
 let vr = '1';
 
 // document.getElementById('Date').innerHTML=today.getFullYear()+"년 "
@@ -37,20 +37,20 @@ comment_add_Data[0].onclick = function(){
   vr = '2';
 }
 function makecomment(input_text){
-  var com ='<p class="comment_list"> <span class="material-icons">cloud</span><b>익명/2022-'+month+'-'+day+'</b><br>'+input_text+'</p> <div id="comment_btn" class="justify-content-end d-flex">     <input type="button" class="material-icons comment_btn comment_add" value="mode_comment">     <input type="button" class="material-icons comment_btn comment_favorite " value="favorite"      <span id="comment_favorite_value">1</span> </div>';
+  var com ='<p class="commentList"> <span class="material-icons">cloud</span><b>익명/2022-'+month+'-'+day+'</b><br>'+input_text+'</p> <div id="comment_btn" class="justify-content-end d-flex">     <input type="button" class="material-icons commentBtn commentAdd" value="mode_comment">     <input type="button" class="material-icons commentBtn commentFavorite " value="favorite"      <span id="comment_favorite_value">1</span> </div>';
   return com;
 }
 
 function addChild() {
   var target = document.getElementById('commentList');
-  var text = document.getElementById('comment_text').value;
+  var text = document.getElementById('body').value;
   var input_comment = makecomment(text);
 
   if(text=='') {
     alert('댓글을 입력하세요.');
   }
   else {
-  document.getElementById('comment_text').value='';
+  document.getElementById('body').value='';
   target.insertAdjacentHTML('beforeend',input_comment);
   }
 }
@@ -58,14 +58,14 @@ function addChild() {
 function enter() {
     if (window.event.keyCode == 13) {
       var target = document.getElementById('commentList');
-      var text = document.getElementById('comment_text').value;
+      var text = document.getElementById('body').value;
       var input_comment = makecomment(text);
 
       if(text=='') {
         alert('댓글을 입력하세요.');
       }
       else {
-      document.getElementById('comment_text').value='';
+      document.getElementById('commentText').value='';
       target.insertAdjacentHTML('beforeend',input_comment);
       }
       }

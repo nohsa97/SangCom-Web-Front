@@ -1,4 +1,4 @@
- .border_list {
+ .borderList {
     border-left:1px solid black;
     padding-left:100px;
     margin-left: -1px !important;
@@ -8,7 +8,7 @@
      
  }
 
-  .border_content {
+  .borderContent {
     padding: 50px;
     padding-bottom: 10px;
     border-left:1px solid black;
@@ -19,13 +19,13 @@
     margin-left: 100px;
  }
  
- .comment_input {
+ .commentInput {
     min-width : 480px;
     margin-left: 20px !important;
     margin-bottom: 10px;
  }
 
-.comment_list{
+.commentList{
    padding-left: 20px !important;
 }
 
@@ -43,7 +43,7 @@
      left:450px;
  }
 
- .comment_btn{
+ .commentBtn{
     border: none;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
     
@@ -54,7 +54,7 @@
       width : 100%;
     }
 
-    .border_content {
+    .borderContent {
         padding: 10px;
         padding-left: 150px;
         border-left:1px solid black;
@@ -70,7 +70,7 @@
 
   @media (max-width:600px)
   {
-   .border_list {
+   .borderList {
       border-left:0;
       padding-left:0;
       margin-left:0;
@@ -90,7 +90,7 @@
   }
 
 
-  .border_create {
+  .borderCreate {
    border: 2px solid black;
    padding: 0;
   }
