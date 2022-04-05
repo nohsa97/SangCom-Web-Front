@@ -44,18 +44,28 @@
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                   <h1>SangCom</h1><br>
                   <!-- 로그인 -->
-
-                  <form method="post">
-                        <label for="member_ID" >ID</label>
-                        <input class="loginbord" type="text" name = "ID" id ="member_ID" placeholder="ID입력" value="" required autocomplete="off"><br>
-                        <label for="member_password" >PW</label>
-                        <input class="loginbord" type="password" name = "PW" id ="member_password" placeholder="PW입력" value="" required autocomplete="off">
-                        <div style="margin: 10px;">
+                  
+                  <form action="index.html" id="loginForm" method="get">
+                     <label for="member_ID" >ID</label>
+                     <input class="loginbord" type="text" name = "id" id ="id" placeholder="ID입력" value="" required autocomplete="off"><br>
+                     <label for="member_password" >PW</label>
+                     <input class="loginbord" type="password" name = "password" id ="password" placeholder="PW입력" value="" required autocomplete="off">
+                     
+                     <div style="margin: 10px;">
+                       
+                       <input class="material-icons btn" id="loginBtn" style="width:300px;" type="submit" name="login" value="login 로그인" onclick="loginBtn()">
+                     </div>
+                   </form>
+                  
+                      <!-- <label for="member_ID" >ID</label>
+                      <input class="loginbord" type="text" name = "ID" id ="member_ID" placeholder="ID입력" value="" required autocomplete="off"><br>
+                      <label for="member_password" >PW</label>
+                      <input class="loginbord" type="password" name = "PW" id ="member_password" placeholder="PW입력" value="" required autocomplete="off">
+                      
+                      <div style="margin: 10px;">
                         
                         <input class="material-icons btn" id="login_btn" style="width:300px;" type="submit" name="login" value="login 로그인" onclick="loginBtn()">
-                      </div>
-                       
-                  </form>
+                      </div> -->
                   <!--아래 회원가입 , idpw찾기 버튼.-->
                   <div style="margin: 5px;">
                       <a href="register.html" target="_blank">

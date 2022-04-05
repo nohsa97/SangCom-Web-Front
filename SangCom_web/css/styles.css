@@ -3041,7 +3041,7 @@ textarea.form-control-lg {
   font-size: 1rem !important;
 }
 
-.btnsmall_blue {
+.btnsmallBlue {
   width:80px;
   background-color: rgb(165, 240, 250);
 
@@ -12278,7 +12278,7 @@ textarea.form-control-lg {
   right:0px;
 }
 
-.schedule_table{
+.scheduleTable{
 
   margin: 1rem;
    max-width: 730px;
@@ -12292,7 +12292,7 @@ textarea.form-control-lg {
   
 }
 
-.schedule_table th {
+.scheduleTable th {
   border: 1px solid black;
   box-sizing: border-box;
 }
@@ -12328,7 +12328,7 @@ input:focus{
   .content nav {
     width : 100%;
   }
-  .schedule_table  {
+  .scheduleTable  {
     margin: 2rem;
      max-width: 730px;
      max-height: 730px;

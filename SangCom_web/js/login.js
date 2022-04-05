@@ -1,6 +1,6 @@
 let id = document.getElementById('member_ID');
- let pw = document.getElementById('member_password');
-
+let pw = document.getElementById('member_password');
+let form = document.getElementById('loginForm');
 
    function loginBtn() {
      if(id.value=="")
@@ -14,11 +14,11 @@ let id = document.getElementById('member_ID');
      }
 
      else if(id.value!='sangcomtest' || pw.value!='test') {
-      alert('아이디 비밀번호가 틀렸습니다.')
+      alert('아이디 비밀번호가 틀렸습니다.');
      }
 
     if(id.value=='sangcomtest' && pw.value=='test') {
       alert("어서오십시오. SangComTest님.");
-      location.href = "main.html";
+      location.href = 'main.html';
     }
 }
