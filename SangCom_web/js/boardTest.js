@@ -6,6 +6,16 @@
     //     })
     // });
 
+    var dd = new XMLHttpRequest();
+
+$
+
+$(document).ready(function(){
+    $("#schoolLink").click(function(){
+        $("#schoolLink").hide();
+    });
+});
+
 fetch('js/boardList2').then(function(res){
     res.text().then(function(text){
         var navs = '';
