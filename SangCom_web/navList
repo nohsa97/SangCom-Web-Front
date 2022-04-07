@@ -1,0 +1,24 @@
+                <div class="nav_first">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="boardFree.html" class="nav_logo">전교생 자유게시판</a>
+                </div>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="boardStudentAsso.html" class="nav_logo">학생회게시판</a>
+                </div> <br>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="" class="nav_logo">학생 건의함</a>
+                </div>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="" class="nav_logo">학생회 공지</a>
+                </div>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="" class="nav_logo">동아리 활동</a>
+                </div> <br>
+                <div class="nav_list">
+                  <ion-icon name="grid-outline" class="nav_toggle" id=""></ion-icon>
+                  <a href="" class="nav_logo">게시글 보관함</a>
+                </div>

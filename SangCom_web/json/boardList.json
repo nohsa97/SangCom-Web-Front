@@ -1,0 +1,27 @@
+{
+"success": true,
+"data": [
+  {
+    "board_id": 0,
+    "title": "boardFree",
+    "body": "string",
+    "user_id": "string",
+    "regdate": "string",
+    "type" : "string",
+    "goodCount": 0,
+    "replyCount" : 0,
+    "scrapCount" : 0
+   },
+  {
+    "board_id": 1,
+    "title": "boardStudentAsso",
+    "body": "string",
+    "user_id": "string",
+    "regdate": "string",
+    "type" : "string",
+    "goodCount": 0,
+    "replyCount" : 0,
+    "scrapCount" : 0
+   }
+]
+}
