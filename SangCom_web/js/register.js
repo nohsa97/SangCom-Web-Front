@@ -1,53 +1,93 @@
-let final_check = document.getElementById('reg_checkbox');
+let final_check = document.getElementById('checkbox');
+
+
+//유효성 검사 기본 틀들.
 var pattern_num = /[0-9]/;	// 숫자
 var pattern_eng = /[a-zA-Z]/;	// 문자
 var pattern_spc = /[~!@#$%^&*()_+|<>?:{}]/;
 var pattern_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+var RegExp = /^[a-zA-Z0-9]{4,12}$/;
+var e_RegExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
-
+function checkNum(num){
+  var num2 = document.getElementById('year');
+  // var num = this.value;
+  if(!pattern_num.test(num)){
+    alert('숫자만 입력해주세요.');
+    num2.value='';
+  }
+}
 
 function checkID() {
-  let ID = document.getElementById('member_ID');
+  var ID = document.getElementById('id');
 
-  if(ID.value == "")
-  {
-    final_check.disabled=true;
+  if(!RegExp.test(ID.value)){ //아이디 유효성검사
+    alert("ID는 4~12자의 영문 대소문자와 숫자로만 입력하여 주세요.");        
+    ID.value ='';
   }
   else {
-      final_check.disabled=false;
-  }
-
-}
-
-
-
-
-function check () {
-  // let ID = document.getElementById('member_ID');
-  // let PW = document.getElementById('member_password');
-  // let PWCK = document.getElementById('member_password_check');
-  // let birth = document.getElementById('member_birth');
-  // let addmission = document.getElementById('member_addmission');
-  // let phone = document.getElementById('member_phone');
-   let email = document.getElementById('member_email');
-
-  if(email.includes('@'))
-  {
-    let email_ID = email.split('@')[0];
-    let email_email = email.split('@')[1];
-    if(email_ID==="" || email_email === "")
-    {
-      alert("email을 제대로 입력해주십시오.");
-    }
+    alert("가능한 ID입니다.");
+    final_check.disabled=false;
   }
 }
 
+function check(){
+  var ID = document.getElementById('id');
+  var PW = document.getElementById('password');
+  var PWC = document.getElementById('passwordCheck');
+  var name  = document.getElementById('name');
+ // var birth = document.getElementById('birth');
+  var year = document.getElementById('year');
+  var phone = document.getElementById('phone');
+  var email = document.getElementById('email');
 
-function finish(){
-  let checkbox = document.getElementById('register_finish');
 
-  alert('동의 하셨습니다.');
-  document.getElementById('register_finish').disabled=false;
+  if(ID.value==''){
+    alert("아이디를 입력해주십시오.");
+    return false;
+  }
+  if(PW.value == ''){
+    alert("비밀번호를 입력해주십시오.");
+    return false;
+  }
+
+  if(PWC.value =='' || PWC.value!=PW.value){
+    alert("비밀번호가 일치하지 않습니다.");
+    return false;
+  }
+
+  if(name.value == ''){
+    alert("이름을 입력해주십시오.");
+    return false;
+  }
+
+  if(year.value == ''){
+    alert("입학년도를 입력해주십시오.");
+    return false;
+  }
+
+  if(phone.value == ''){
+    alert("전화번호를 입력해주십시오.");
+    return false;
+  }
+
+  if(email.value == ''){
+    alert("이메일를 입력해주십시오.");
+    return false;
+  }
+
+  if(!e_RegExp.test(objEmail.value)){ //이메일 유효성 검사
+    alert("올바른 이메일 형식이 아닙니다.");
+    return false;
+  }
+  if(final_check.check == false){
+    alert('개인정보 관련 동의를 눌러주세요.');
+    return false;
+  }
+
+  else{
+
+  }
 }
 
 
@@ -55,55 +95,5 @@ function finish(){
 
 
 
-
-// <header class="py-5">
-//     <div class="container px-lg-5">
-//         <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-//           <form action="index.html" method="get">
-//                 <h1 class="display-5 fw-bold">회원가입</h1>   <br>
-//                 <label for="member_ID">아이디</label>
-//                 <input type="text" name = "ID" id ="member_ID" placeholder="아이디" >
-//                 <div id=id_error></div><br>
-//
-//                 <label for="member_password">비밀번호</label>
-//                 <input type="password" name = "PW" id ="member_password" placeholder="비밀번호" ><br>
-//
-//                 <label for="member_password_check">비밀번호 확인</label>
-//                 <input type="password" name = "PW_CK" id ="member_password_check" placeholder="비밀번호 확인" ><br>
-//
-//                 <label for="member_name">이름</label>
-//                 <input type="text" name = "name" id ="member_name" placeholder="이름" ><br>
-//
-//                 <label for="member_birth">생년월일</label>
-//                 <input type="date" name = "birth" id ="member_birth" placeholder="생년월일 8자리 ex)20210101" ><br>
-//
-//                 <select class="" name="student_class_grade">
-//                   <option value="none">학년</option>
-//                   <option value="1_grade">1</option>
-//                   <option value="2_grade">2</option>
-//                   <option value="3_grade">3</option>
-//                 </select>
-//
-//                 <select class="" name="student_class_class">
-//                   <option value="none">반</option>
-//                   <option value="1_class">1</option>
-//                   <option value="2_class">2</option>
-//                   <option value="3_class">3</option>
-//                   <option value="4_class">4</option>
-//                   <option value="5_class">5</option>
-//                   <option value="6_class">6</option>
-//                   <option value="7_class">7</option>
-//                 </select>
-//                 번호
-//                 <input type="text" name = "member_class_number" id ="member_class_number"  placeholder="번호"  style="width:40px"><br>
-//
-//                 <label for="member_addmission">입학년도</label>
-//                 <input type="text" name = "member_addmission" id ="member_addmission" placeholder="ex)2021" ><br>
-//
-//                 <label for="member_class_phone">전화번호</label>
-//                 <input type="text" name = "member_phone" id ="member_phone" placeholder="-제외 입력" ><br>
-//
-//                 <label for="member_email">이메일</label>
-//                 <input type="text" name = "member_email" id ="member_email" placeholder="ex) example@example.com" style="width : 210px" ><br><br>
-//
-//                 <input type="checkbox" name="admit" value="admit">
+ 
+//출처: https://yeonvley.tistory.com/13 [코딩하는 이쁘니] 
