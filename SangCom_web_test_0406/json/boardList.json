@@ -1,0 +1,15 @@
+{
+"success": true,
+"data": [
+  {
+   "board_id": 0,
+   "title": "borderFree",
+   "korean" : "전교생 자유게시판"
+  },
+  {
+    "board_id": 1,
+    "title": "borderStudentAsso",
+    "korean" : "학생회 게시판"
+   }
+]
+}
