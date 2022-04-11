@@ -1,4 +1,4 @@
-let final_check = document.getElementById('checkbox');
+let finalCheck = document.getElementById('checkbox');
 
 
 //유효성 검사 기본 틀들.
@@ -18,17 +18,47 @@ function checkNum(num){
   }
 }
 
+function loadItem(){
+  return fetch("http://127.0.0.1:5501/json/userData.json")
+  .then((response) => response.json())
+  .then((json)=>json.items);
+}
+
 function checkID() {
+  var tr =false ;
   var ID = document.getElementById('id');
 
   if(!RegExp.test(ID.value)){ //아이디 유효성검사
     alert("ID는 4~12자의 영문 대소문자와 숫자로만 입력하여 주세요.");        
     ID.value ='';
+    return false;
   }
-  else {
-    alert("가능한 ID입니다.");
-    final_check.disabled=false;
-  }
+  
+  loadItem().then((items)=>{
+    for(var i=0;i<items.length;i++ ) {
+      if(items[i].id == ID.value)
+      {
+        alert('이미 존재하는 아이디입니다.');
+        finalCheck.disabled=true;
+        break;
+      }
+      if(i==items.length-1)
+      {
+        tr=true;
+        finalCheck.disabled=false;
+      }
+    }
+
+    if(tr == true){
+      alert('가능한 ID입니다.');
+    }
+    else {
+      
+    }
+  })
+  
+
+  
 }
 
 function check(){

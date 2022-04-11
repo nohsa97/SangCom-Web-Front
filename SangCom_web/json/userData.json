@@ -1,6 +1,11 @@
-           {
-        "Study_day" : "tue",
-        "Study_period" : "2st",
-        "Study_name" : ""
-        }
-
+{
+   "items": [
+     {
+      "id": "sangcomtest"
+     },
+     {
+      "id": "nohsa"
+     }
+   ]
+   
+   }
